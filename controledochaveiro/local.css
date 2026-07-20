@@ -1,0 +1,222 @@
+/* controledochaveiro/local.css */
+
+/* Escopo fechado para a identidade visual do banner */
+.pagina-chaveiro {
+  --ch-blue: #112240;
+  --ch-orange: #e06a22;
+  --ch-green: #108a4f;
+  --ch-white: #ffffff;
+  --ch-muted: #b4c3da;
+  
+  background-color: #f4f6f9;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header & Logo */
+.pagina-chaveiro .ch-header {
+  background-color: var(--ch-white);
+  text-align: center;
+  padding: 20px 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.04);
+}
+.pagina-chaveiro .ch-logo {
+  display: inline-block;
+}
+.pagina-chaveiro .ch-logo-my {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--ch-blue);
+  font-family: sans-serif;
+}
+.pagina-chaveiro .ch-logo-key {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--ch-orange);
+  font-family: sans-serif;
+}
+.pagina-chaveiro .ch-logo-sub {
+  font-size: 11px;
+  letter-spacing: 6px;
+  font-weight: bold;
+  color: var(--ch-blue);
+  text-align: center;
+  margin-top: -4px;
+  font-family: sans-serif;
+}
+
+/* Caixa Central do Banner (Simula o Banner Vertical) */
+.pagina-chaveiro .ch-banner-box {
+  background-color: var(--ch-blue);
+  color: var(--ch-white);
+  padding: 45px 24px;
+  border-radius: 12px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  box-shadow: 0 12px 40px rgba(17, 34, 64, 0.2);
+}
+
+/* Elementos do Bloco Hero */
+.pagina-chaveiro .ch-hero {
+  margin-bottom: 25px;
+}
+.pagina-chaveiro .ch-badge {
+  background-color: var(--ch-orange);
+  color: var(--ch-white);
+  padding: 6px 16px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  font-family: sans-serif;
+}
+.pagina-chaveiro .ch-title {
+  font-family: sans-serif !important; /* Força desativar serifas locais se houver herança */
+  font-size: clamp(1.8rem, 5vw, 2.4rem) !important;
+  font-weight: 800 !important;
+  line-height: 1.2 !important;
+  color: var(--ch-white) !important;
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+}
+.pagina-chaveiro .ch-highlight {
+  color: var(--ch-orange);
+}
+.pagina-chaveiro .ch-subtitle {
+  color: var(--ch-muted);
+  font-size: 1.1rem;
+  max-width: 420px;
+  margin: 0 auto;
+  line-height: 1.4;
+}
+
+/* Card Branco de Oferta */
+.pagina-chaveiro .ch-card {
+  background-color: var(--ch-white);
+  color: #333333;
+  border-radius: 14px;
+  padding: 24px;
+  margin: 30px auto;
+  max-width: 460px;
+  text-align: left;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+.pagina-chaveiro .ch-card-top {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.pagina-chaveiro .ch-free-badge {
+  background-color: var(--ch-green);
+  color: var(--ch-white);
+  font-weight: bold;
+  font-size: 0.85rem;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.1;
+  flex-shrink: 0;
+  font-family: sans-serif;
+}
+.pagina-chaveiro .ch-free-text h2 {
+  font-family: sans-serif !important;
+  font-size: 1.3rem !important;
+  color: var(--ch-green) !important;
+  font-weight: 700 !important;
+}
+.pagina-chaveiro .ch-free-text p {
+  color: #666666;
+  font-size: 0.9rem;
+}
+.pagina-chaveiro .ch-divider {
+  border: 0;
+  border-top: 1px solid #eef2f5;
+  margin: 16px 0;
+}
+.pagina-chaveiro .ch-price-label {
+  font-size: 1.05rem;
+  font-weight: bold;
+  color: #222222;
+}
+.pagina-chaveiro .ch-price-value {
+  font-family: sans-serif !important;
+  font-size: 3rem !important;
+  font-weight: 800 !important;
+  color: var(--ch-orange);
+  line-height: 1;
+  margin: 6px 0;
+}
+.pagina-chaveiro .ch-price-sub {
+  color: var(--ch-green);
+  font-weight: bold;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+}
+
+/* Botão de Ação WhatsApp (Estilo do rodapé do banner) */
+.pagina-chaveiro .ch-action {
+  margin-top: 10px;
+}
+.pagina-chaveiro .ch-btn-wa {
+  background-color: var(--ch-green);
+  color: var(--ch-white);
+  border: none;
+  padding: 16px 24px;
+  font-family: sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 460px;
+  justify-content: center;
+  transition: background-color 0.15s ease, transform 0.1s ease;
+  box-shadow: 0 4px 12px rgba(16, 138, 79, 0.25);
+}
+.pagina-chaveiro .ch-btn-wa:hover {
+  background-color: #0c7341;
+}
+.pagina-chaveiro .ch-btn-wa:active {
+  transform: scale(0.99);
+}
+.pagina-chaveiro .ch-wa-icon {
+  flex-shrink: 0;
+}
+
+/* Rodapé Isolado */
+.pagina-chaveiro .ch-footer {
+  margin-top: auto;
+  background-color: var(--ch-white);
+  padding: 24px 15px;
+  text-align: center;
+  font-size: 0.88rem;
+  color: #666666;
+  border-top: 1px solid #eef2f5;
+}
+.pagina-chaveiro .ch-footer a {
+  color: var(--ch-orange);
+  text-decoration: none;
+}
+.pagina-chaveiro .ch-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Ajuste fino para Mobile */
+@media (max-width: 600px) {
+  .pagina-chaveiro .ch-banner-box {
+    margin: 12px;
+    padding: 35px 16px;
+    border-radius: 8px;
+  }
+}
